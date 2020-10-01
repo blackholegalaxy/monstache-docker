@@ -1,6 +1,6 @@
-FROM golang:1.13.4-alpine3.10 as builder
+FROM golang:1.14.9-alpine3.11 as builder
 
-ENV MONSTACHE_VERSION=v6.5.2
+ENV MONSTACHE_VERSION=v6.7.0
 
 COPY go.mod /cache-module/go.mod
 COPY go.sum /cache-module/go.sum
